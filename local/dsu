@@ -1,0 +1,12 @@
+set -x
+export DEVELOPER=$HOME/developer
+
+if [ `uname -i` = 'i386' ]; then
+  lib="lib"
+else
+  lib="lib64"
+fi
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$DEVELOPER/$lib
+export PATH=$PATH:$DEVELOPER/bin
+export PYTHONPATH=$PYTHONPATH:$DEVELOPER/$lib/python2.7/dist-packages
