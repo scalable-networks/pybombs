@@ -19,5 +19,5 @@
 
 category: baseline
 depends: wget
-source: wget://http://download.zeromq.org/zeromq-3.2.4.tar.gz
+source: git://https://github.com/scalable-networks/zeromq-3.2.3.git
 inherit: autoconf
