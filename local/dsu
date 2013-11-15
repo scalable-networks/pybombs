@@ -1,4 +1,8 @@
-set -x
+# set -x
+#
+# sudo apt-get install libboost-dev libboost-filesystem-dev
+#
+
 export DEVELOPER=$HOME/developer
 
 if [ `uname -i` = 'i386' ]; then
@@ -10,3 +14,4 @@ fi
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$DEVELOPER/$lib
 export PATH=$PATH:$DEVELOPER/bin
 export PYTHONPATH=$PYTHONPATH:$DEVELOPER/$lib/python2.7/dist-packages
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$DEVELOPER/$lib/pkgconfig
