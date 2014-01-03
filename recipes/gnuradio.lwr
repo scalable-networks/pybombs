@@ -19,7 +19,7 @@
 
 depends: make mcpp boost fftw cppunit swig gsl uhd git python cheetah wxpython numpy lxml pygtk pycairo cmake pyqt4 pyqwt5 gcc ice
 category: common
-source: git://https://github.com/scalable-networks/gnuradio-3.7.0.1.git
+source: git://https://github.com/scalable-networks/gnuradio-3.7.2.1.git
 gitbranch: master
 var config_opt = " -DENABLE_GR_FCD=ON -DENABLE_DOXYGEN=$builddocs -DENABLE_GR_LOG=ON -DENABLE_PERFORMANCE_COUNTERS=ON -DCMAKE_CXX_FLAGS=-fpermissive "
 inherit: cmake
